@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# 八字排盘系统 (BaZi Calculator)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+一个基于React的八字排盘（四柱命理）应用，提供传统中国命理八字的计算和分析功能。
 
-## Available Scripts
+## 功能特点
 
-In the project directory, you can run:
+- 根据出生日期和时间计算八字（四柱）
+- 显示年、月、日、时四柱的天干地支
+- 分析天干地支的五行属性
+- 计算地支藏干
+- 分析五行强弱状况
+- 确定日主五行的状态
+- 推算命局喜忌用神
+- 传统中国文化风格的UI设计
 
-### `npm start`
+## 技术栈
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 18
+- Styled Components（CSS-in-JS）
+- Moment.js（日期处理）
+- Chinese-lunar-calendar（中国农历转换）
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 安装与使用
 
-### `npm test`
+1. 克隆仓库
+```bash
+git clone https://github.com/yourusername/open-zydx.git
+cd open-zydx
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. 安装依赖
+```bash
+npm install
+```
 
-### `npm run build`
+3. 启动开发服务器
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. 构建生产版本
+```bash
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 项目结构
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+  ├── components/           # React组件
+  │   ├── BaziCalculator.js # 主计算组件
+  │   ├── BaziChart.js      # 八字图表展示
+  │   ├── DetailedPillar.js # 详细八字信息
+  │   └── ElementAnalysis.js # 五行分析
+  ├── utils/                # 工具函数
+  │   └── baziUtils.js      # 八字计算核心函数
+  ├── styles/               # 样式文件
+  │   └── GlobalStyle.js    # 全局样式
+  ├── assets/               # 静态资源
+  ├── App.js                # 应用入口组件
+  └── index.js              # React入口文件
+```
 
-### `npm run eject`
+## 八字计算原理
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+本应用基于传统中国命理学的八字理论进行计算和分析：
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **四柱计算**：根据公历日期转换为农历，并计算年、月、日、时四柱的天干地支
+2. **五行分析**：计算命局中五行（金、木、水、火、土）的数量和强弱
+3. **日主分析**：分析日柱天干所属五行的强弱状态
+4. **喜忌判断**：根据日主五行的强弱，判断命局所喜用和忌用的五行
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 免责声明
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+本应用仅用于传统文化研究和娱乐目的，不作为任何决策的依据。八字命理分析结果仅供参考，不应被视为科学预测或建议。
 
-## Learn More
+## 许可证
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
