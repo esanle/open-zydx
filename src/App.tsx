@@ -30,7 +30,7 @@ const Subtitle = styled.p`
   margin-top: 10px;
 `;
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
@@ -43,6 +43,6 @@ function App() {
       </AppContainer>
     </>
   );
-}
+};
 
-export default App;
+export default App; 

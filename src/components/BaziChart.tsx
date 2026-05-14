@@ -2,6 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import { STEMS_ELEMENTS } from '../utils/baziUtils';
 
+interface PillarProps {
+  name: string;
+  stem: string;
+  branch: string;
+  stemElement: string;
+  branchElement: string;
+  hiddenStems: string[];
+}
+
+interface BaziChartProps {
+  pillars: PillarProps[];
+  dayMasterElement?: string;
+}
+
 const ChartContainer = styled.div`
   margin: 30px 0;
   border: 2px solid #8B0000;
@@ -27,7 +41,11 @@ const ChartGrid = styled.div`
   }
 `;
 
-const PillarBox = styled.div`
+interface PillarBoxProps {
+  isDay?: boolean;
+}
+
+const PillarBox = styled.div<PillarBoxProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +62,11 @@ const PillarName = styled.div`
   color: #8B0000;
 `;
 
-const StemBox = styled.div`
+interface ElementProps {
+  element: string;
+}
+
+const StemBox = styled.div<ElementProps>`
   width: 60px;
   height: 60px;
   display: flex;
@@ -78,12 +100,12 @@ const HiddenStemsContainer = styled.div`
   margin-top: 5px;
 `;
 
-const HiddenStem = styled.span`
+const HiddenStem = styled.span<ElementProps>`
   font-size: 14px;
   color: ${props => getElementColor(props.element)};
 `;
 
-function getElementColor(element) {
+function getElementColor(element: string): string {
   switch (element) {
     case '木': return '#4CAF50'; // Green for Wood
     case '火': return '#F44336'; // Red for Fire
@@ -94,7 +116,7 @@ function getElementColor(element) {
   }
 }
 
-function BaziChart({ pillars, dayMasterElement }) {
+const BaziChart: React.FC<BaziChartProps> = ({ pillars, dayMasterElement }) => {
   return (
     <ChartContainer>
       <ChartTitle>八字命盘</ChartTitle>
@@ -125,6 +147,6 @@ function BaziChart({ pillars, dayMasterElement }) {
       </ChartGrid>
     </ChartContainer>
   );
-}
+};
 
 export default BaziChart; 

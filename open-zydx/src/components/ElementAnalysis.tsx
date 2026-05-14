@@ -1,5 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FIVE_ELEMENTS } from '../utils/baziUtils';
+
+interface ElementStrength {
+  element: string;
+  value: number;
+  status: string;
+}
+
+interface DayMaster {
+  element: string;
+  value: number;
+  status: string;
+}
+
+interface ElementAnalysisProps {
+  elementStrengths: ElementStrength[];
+  dayMaster: DayMaster;
+  useful: string[];
+  avoid: string[];
+}
 
 const Container = styled.div`
   margin: 30px 0;
@@ -20,6 +40,10 @@ const ElementGrid = styled.div`
   margin-bottom: 30px;
   
   @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media (max-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;
@@ -30,8 +54,8 @@ const ElementCard = styled.div`
   overflow: hidden;
 `;
 
-const ElementHeader = styled.div`
-  background-color: ${props => getElementColor(props.element)};
+const ElementHeader = styled.div<{ element: string }>`
+  background-color: ${props => getElementColor(props.element, 1)};
   color: white;
   padding: 10px;
   text-align: center;
@@ -54,7 +78,7 @@ const ElementStat = styled.div`
   }
 `;
 
-const ElementValue = styled.span`
+const ElementValue = styled.span<{ highlight?: boolean }>`
   font-weight: bold;
   color: ${props => props.highlight ? '#8B0000' : '#333'};
 `;
@@ -73,17 +97,34 @@ const SectionTitle = styled.h4`
   font-size: 18px;
 `;
 
-const ElementTag = styled.span`
+const ElementTag = styled.span<{ element: string }>`
   display: inline-block;
   margin: 5px;
   padding: 5px 10px;
   border-radius: 4px;
   background-color: ${props => getElementColor(props.element, 0.2)};
-  color: ${props => getElementColor(props.element)};
+  color: ${props => getElementColor(props.element, 1)};
   font-weight: bold;
 `;
 
-function getElementColor(element, opacity = 1) {
+const ElementBar = styled.div`
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 15px;
+`;
+
+const ElementBarFill = styled.div<{ value: number; element: string }>`
+  height: 100%;
+  width: ${props => Math.min(props.value * 15, 100)}%;
+  background-color: ${props => getElementColor(props.element, 0.8)};
+  border-radius: 10px;
+`;
+
+function getElementColor(element: string, opacity = 1): string {
   let color;
   switch (element) {
     case '木': color = '76, 175, 80'; break; // Green for Wood
@@ -97,7 +138,7 @@ function getElementColor(element, opacity = 1) {
   return opacity < 1 ? `rgba(${color}, ${opacity})` : `rgb(${color})`;
 }
 
-function getStatusDescription(status) {
+function getStatusDescription(status: string): string {
   switch (status) {
     case '旺': return '过强，有余';
     case '相': return '较强，适中偏强';
@@ -108,38 +149,41 @@ function getStatusDescription(status) {
   }
 }
 
-function ElementAnalysis({ relationships, dayMaster, favorable }) {
-  if (!relationships || relationships.length === 0 || !dayMaster || !favorable) {
-    return null;
-  }
+const ElementAnalysis: React.FC<ElementAnalysisProps> = ({ 
+  elementStrengths, 
+  dayMaster, 
+  useful, 
+  avoid 
+}) => {
+  // 排序五行，从强到弱
+  const sortedElements = [...elementStrengths].sort((a, b) => b.value - a.value);
   
   return (
     <Container>
       <Title>五行分析</Title>
       
       <ElementGrid>
-        {relationships.map((rel, index) => (
+        {sortedElements.map((el, index) => (
           <ElementCard key={index}>
-            <ElementHeader element={rel.element}>
-              {rel.element}
+            <ElementHeader element={el.element}>
+              {el.element}
             </ElementHeader>
             <ElementBody>
               <ElementStat>
                 <span>数量：</span>
-                <ElementValue>{rel.count}</ElementValue>
-              </ElementStat>
-              <ElementStat>
-                <span>强度：</span>
-                <ElementValue>{rel.strength.toFixed(1)}</ElementValue>
+                <ElementValue>{el.value.toFixed(1)}</ElementValue>
               </ElementStat>
               <ElementStat>
                 <span>状态：</span>
                 <ElementValue 
-                  highlight={rel.element === dayMaster.element}
+                  highlight={el.element === dayMaster.element}
                 >
-                  {rel.status}
+                  {el.status}
                 </ElementValue>
               </ElementStat>
+              <ElementBar>
+                <ElementBarFill value={el.value} element={el.element} />
+              </ElementBar>
             </ElementBody>
           </ElementCard>
         ))}
@@ -157,7 +201,7 @@ function ElementAnalysis({ relationships, dayMaster, favorable }) {
           <strong>日主状态：</strong> {dayMaster.status}（{getStatusDescription(dayMaster.status)}）
         </p>
         <p>
-          <strong>日主强度：</strong> {dayMaster.strength.toFixed(1)}
+          <strong>日主强度：</strong> {dayMaster.value.toFixed(1)}
         </p>
       </Section>
       
@@ -165,7 +209,7 @@ function ElementAnalysis({ relationships, dayMaster, favorable }) {
         <SectionTitle>命局喜忌</SectionTitle>
         <p><strong>喜用神：</strong></p>
         <div>
-          {favorable.favorable.map((element, index) => (
+          {useful.map((element, index) => (
             <ElementTag key={index} element={element}>
               {element}
             </ElementTag>
@@ -174,7 +218,7 @@ function ElementAnalysis({ relationships, dayMaster, favorable }) {
         
         <p style={{ marginTop: '15px' }}><strong>忌神：</strong></p>
         <div>
-          {favorable.unfavorable.map((element, index) => (
+          {avoid.map((element, index) => (
             <ElementTag key={index} element={element}>
               {element}
             </ElementTag>
@@ -194,7 +238,7 @@ function ElementAnalysis({ relationships, dayMaster, favorable }) {
           <p>
             日主偏强，根据"扶抑理论"，需要抑制日主，
             故取
-            {favorable.favorable.map((element, index) => (
+            {useful.map((element, index) => (
               <ElementTag key={index} element={element}>{element}</ElementTag>
             ))}
             为喜用，有利于命局平衡。
@@ -203,7 +247,7 @@ function ElementAnalysis({ relationships, dayMaster, favorable }) {
           <p>
             日主偏弱，根据"扶抑理论"，需要扶助日主，
             故取
-            {favorable.favorable.map((element, index) => (
+            {useful.map((element, index) => (
               <ElementTag key={index} element={element}>{element}</ElementTag>
             ))}
             为喜用，有利于命局平衡。
@@ -212,16 +256,16 @@ function ElementAnalysis({ relationships, dayMaster, favorable }) {
         
         <p>
           命局五行状况：
-          {relationships.map((rel, index) => (
+          {sortedElements.map((el, index) => (
             <span key={index}>
               {index > 0 && '，'}
-              {rel.element}（{rel.status}）
+              {el.element}（{el.status}）
             </span>
           ))}
         </p>
       </Section>
     </Container>
   );
-}
+};
 
 export default ElementAnalysis; 
