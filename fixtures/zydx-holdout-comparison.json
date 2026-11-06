@@ -1,0 +1,37 @@
+{
+  "source": "https://zydx.top/paipan.php",
+  "sampleCount": 100,
+  "synthetic": true,
+  "matched": {
+    "pillars": 100,
+    "startOffset": 100,
+    "startOffsetDisplay": 99,
+    "startDate": 100,
+    "decades": 100
+  },
+  "displayDifferences": [
+    {
+      "input": {
+        "year": 1953,
+        "month": 7,
+        "day": 26,
+        "hour": 0,
+        "minute": 15,
+        "gender": 0
+      },
+      "expected": [
+        4,
+        4,
+        19,
+        24
+      ],
+      "actual": [
+        4,
+        4,
+        20,
+        0
+      ]
+    }
+  ],
+  "differences": []
+}

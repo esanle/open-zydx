@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "engine": "Chromium desktop engine with real viewport/touch emulation; not iOS/Android physical devices",
+  "sizes": [
+    {
+      "size": {
+        "width": 320,
+        "height": 900,
+        "mobile": true
+      },
+      "form": {
+        "viewport": 320,
+        "pageWidth": 320,
+        "rootWidth": 320,
+        "horizontalScrollers": [],
+        "narrowButtons": [],
+        "yearColumns": null,
+        "monthColumns": null,
+        "dayColumns": null
+      },
+      "chart": {
+        "viewport": 320,
+        "pageWidth": 320,
+        "rootWidth": 320,
+        "horizontalScrollers": [],
+        "narrowButtons": [],
+        "yearColumns": "61.5px 61.5px 61.5px 61.5px",
+        "monthColumns": "61.5px 61.5px 61.5px 61.5px",
+        "dayColumns": "49.5938px 49.5938px 49.6094px 49.5938px 49.5938px"
+      },
+      "interactions": true
+    },
+    {
+      "size": {
+        "width": 1440,
+        "height": 1000,
+        "mobile": false
+      },
+      "form": {
+        "viewport": 1440,
+        "pageWidth": 1440,
+        "rootWidth": 1120,
+        "horizontalScrollers": [],
+        "narrowButtons": [],
+        "yearColumns": null,
+        "monthColumns": null,
+        "dayColumns": null
+      },
+      "chart": {
+        "viewport": 1440,
+        "pageWidth": 1440,
+        "rootWidth": 1120,
+        "horizontalScrollers": [],
+        "narrowButtons": [],
+        "yearColumns": "190px 190px 190px 190px 190px",
+        "monthColumns": "156.656px 156.672px 156.672px 156.656px 156.672px 156.672px",
+        "dayColumns": "132.844px 132.859px 132.859px 132.859px 132.859px 132.859px 132.859px"
+      },
+      "interactions": true
+    }
+  ],
+  "consoleErrors": [],
+  "externalPageRequests": []
+}

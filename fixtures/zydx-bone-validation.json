@@ -1,0 +1,710 @@
+{
+  "source": "https://zydx.top/paipan.php",
+  "synthetic": true,
+  "records": [
+    {
+      "input": {
+        "year": 1929,
+        "month": 5,
+        "day": 1,
+        "hour": 2,
+        "yearGanZhi": "己巳",
+        "qian": 21
+      },
+      "reference": {
+        "qian": 21,
+        "weight": "二两一钱",
+        "comment": "生身此命运不通，乌云盖月黑朦胧，莫向故园载花木，可来幽地种青松。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1926,
+        "month": 5,
+        "day": 1,
+        "hour": 2,
+        "yearGanZhi": "丙寅",
+        "qian": 22
+      },
+      "reference": {
+        "qian": 22,
+        "weight": "二两二钱",
+        "comment": "身寒骨冷苦伶仃，此命推来真气人。碌碌巴巴无度日，终年打拱过平年。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 5,
+        "day": 1,
+        "hour": 2,
+        "yearGanZhi": "甲子",
+        "qian": 28
+      },
+      "reference": {
+        "qian": 28,
+        "weight": "二两八钱",
+        "comment": "女命生来八字轻，为善作事也无因，你把别人当亲生，别人对你假殷情。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 5,
+        "day": 1,
+        "hour": 4,
+        "yearGanZhi": "甲子",
+        "qian": 29
+      },
+      "reference": {
+        "qian": 29,
+        "weight": "二两九钱",
+        "comment": "初年运限未曾享，纵有功名在后底。须过四旬绕可上，移居改姓始为良。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 2,
+        "day": 1,
+        "hour": 2,
+        "yearGanZhi": "甲子",
+        "qian": 30
+      },
+      "reference": {
+        "qian": 30,
+        "weight": "三两零钱",
+        "comment": "女命推来比郎强，婚姻大事碍无障，中年走过坎坷地，末年渐经行前强。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 2,
+        "day": 1,
+        "hour": 4,
+        "yearGanZhi": "甲子",
+        "qian": 31
+      },
+      "reference": {
+        "qian": 31,
+        "weight": "三两一钱",
+        "comment": "忙忙碌碌苦中求，何日云开见日头。难得祖基家可立，中年衣食渐无忧。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 2,
+        "day": 2,
+        "hour": 14,
+        "yearGanZhi": "甲子",
+        "qian": 37
+      },
+      "reference": {
+        "qian": 37,
+        "weight": "三两七钱",
+        "comment": "此命推来费运多，若作摧群受折磨，山路崎岖吊下耳，左插右安心难留。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 3,
+        "day": 4,
+        "hour": 6,
+        "yearGanZhi": "甲子",
+        "qian": 55
+      },
+      "reference": {
+        "qian": 55,
+        "weight": "五两五钱",
+        "comment": "走马扬鞭争名利，少年做事费筹谋。一朝福禄源源至，富贵荣华耀六亲。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 3,
+        "day": 2,
+        "hour": 0,
+        "yearGanZhi": "甲子",
+        "qian": 56
+      },
+      "reference": {
+        "qian": 56,
+        "weight": "五两六钱",
+        "comment": "明珠辉吐离埃来，女有口有清散开，走失郎君当两归，交易有成永无灾。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 3,
+        "day": 12,
+        "hour": 6,
+        "yearGanZhi": "甲子",
+        "qian": 57
+      },
+      "reference": {
+        "qian": 57,
+        "weight": "五两七钱",
+        "comment": "福禄丰盈万事全，一生荣耀显双亲。名扬威振人钦敬，处世逍遥似遇春。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 3,
+        "day": 18,
+        "hour": 6,
+        "yearGanZhi": "甲子",
+        "qian": 58
+      },
+      "reference": {
+        "qian": 58,
+        "weight": "五两八钱",
+        "comment": "此命推来转悠悠，时运未来莫强求，幸得今日重反点，自有好运在后头。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 6,
+        "day": 4,
+        "hour": 0,
+        "yearGanZhi": "甲子",
+        "qian": 59
+      },
+      "reference": {
+        "qian": 59,
+        "weight": "五两九钱",
+        "comment": "细推此格妙且清，必定财高礼义通。甲第之中应有分，扬鞭走马显威荣。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 6,
+        "day": 5,
+        "hour": 0,
+        "yearGanZhi": "甲子",
+        "qian": 60
+      },
+      "reference": {
+        "qian": 60,
+        "weight": "六两零钱",
+        "comment": "女命八字喜气和，谋事求财吉庆多，口舌渐消疾病少，夫君走别归老窠。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 3,
+        "day": 4,
+        "hour": 0,
+        "yearGanZhi": "甲子",
+        "qian": 61
+      },
+      "reference": {
+        "qian": 61,
+        "weight": "六两一钱",
+        "comment": "不作朝中金榜客，定为世上一财翁。聪明天赋经书熟，名显高科自是荣。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 3,
+        "day": 5,
+        "hour": 0,
+        "yearGanZhi": "甲子",
+        "qian": 62
+      },
+      "reference": {
+        "qian": 62,
+        "weight": "六两二钱",
+        "comment": "指日高升气象新，走失待人有信音，好命遇事遂心好，伺病口舌皆除根。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 3,
+        "day": 12,
+        "hour": 0,
+        "yearGanZhi": "甲子",
+        "qian": 63
+      },
+      "reference": {
+        "qian": 63,
+        "weight": "六两三钱",
+        "comment": "命主为官福禄长，得来富贵定非常。名题雁塔传金榜，定中高科天下扬。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1924,
+        "month": 3,
+        "day": 18,
+        "hour": 0,
+        "yearGanZhi": "甲子",
+        "qian": 64
+      },
+      "reference": {
+        "qian": 64,
+        "weight": "六两四钱",
+        "comment": "俊鸟曾得出胧中，脱离为难显威风，一朝得意福力至，东南西北任意通。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1934,
+        "month": 3,
+        "day": 5,
+        "hour": 0,
+        "yearGanZhi": "甲戌",
+        "qian": 65
+      },
+      "reference": {
+        "qian": 65,
+        "weight": "六两五钱",
+        "comment": "细推此命福不轻，安国安邦极品人。文纷雕梁徽富贵，威声照耀四方闻。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1934,
+        "month": 3,
+        "day": 12,
+        "hour": 0,
+        "yearGanZhi": "甲戌",
+        "qian": 66
+      },
+      "reference": {
+        "qian": 66,
+        "weight": "六两六钱",
+        "comment": "时来运转闺阁楼，贤德淑女君子求，击鼓乐之大吉庆，女命逢此喜悠悠。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1934,
+        "month": 3,
+        "day": 18,
+        "hour": 0,
+        "yearGanZhi": "甲戌",
+        "qian": 67
+      },
+      "reference": {
+        "qian": 67,
+        "weight": "六两七钱",
+        "comment": "此命生来福自宏，田园家业最高隆。平生衣禄丰盈足，一世荣华万事通。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1936,
+        "month": 3,
+        "day": 18,
+        "hour": 0,
+        "yearGanZhi": "丙子",
+        "qian": 68
+      },
+      "reference": {
+        "qian": 68,
+        "weight": "六两八钱",
+        "comment": "水底明月不可捞，女命早限运未高，交易出行难获利，未运终得渐见好。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1939,
+        "month": 3,
+        "day": 5,
+        "hour": 0,
+        "yearGanZhi": "己卯",
+        "qian": 69
+      },
+      "reference": {
+        "qian": 69,
+        "weight": "六两九钱",
+        "comment": "君是人间前禄星，一生富贵众人钦。纵然福禄由天定，安享荣华过一生。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1939,
+        "month": 3,
+        "day": 12,
+        "hour": 0,
+        "yearGanZhi": "己卯",
+        "qian": 70
+      },
+      "reference": {
+        "qian": 70,
+        "weight": "七两零钱",
+        "comment": "本命推断喜气新，恰遇郎君金遂心，坤身来交正当运，富贵衣禄乐平生。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1939,
+        "month": 3,
+        "day": 18,
+        "hour": 0,
+        "yearGanZhi": "己卯",
+        "qian": 71
+      },
+      "reference": {
+        "qian": 71,
+        "weight": "七两一钱",
+        "comment": "此命生来大不同，公侯卿相在其中。一生自有逍遥福，富贵荣华极品隆。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1927,
+        "month": 2,
+        "day": 1,
+        "hour": 0,
+        "yearGanZhi": "丁卯",
+        "qian": 35
+      },
+      "reference": {
+        "qian": 35,
+        "weight": "三两五钱",
+        "comment": "女子走冰怕冰薄，出行交易受残霜，婚姻周郎休此意，官司口舌须相加。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1944,
+        "month": 9,
+        "day": 14,
+        "hour": 5,
+        "yearGanZhi": "甲申",
+        "qian": 50
+      },
+      "reference": {
+        "qian": 50,
+        "weight": "五两零钱",
+        "comment": "为名为利终日劳，中年福禄也多遭。老来是有财星照，不比前番日下高。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1961,
+        "month": 7,
+        "day": 27,
+        "hour": 10,
+        "yearGanZhi": "辛丑",
+        "qian": 39
+      },
+      "reference": {
+        "qian": 39,
+        "weight": "三两九钱",
+        "comment": "女命推来运未能，劳碌奔波一场空，好似俊鸟在笼锁，中年未限凄秋风。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1978,
+        "month": 5,
+        "day": 12,
+        "hour": 15,
+        "yearGanZhi": "戊午",
+        "qian": 49
+      },
+      "reference": {
+        "qian": 49,
+        "weight": "四两九钱",
+        "comment": "此命推来福不轻，自成自立耀门庭。从来富贵人亲近，使婢差奴过一生。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1935,
+        "month": 3,
+        "day": 25,
+        "hour": 20,
+        "yearGanZhi": "乙亥",
+        "qian": 48
+      },
+      "reference": {
+        "qian": 48,
+        "weight": "四两八钱",
+        "comment": "一朵鲜花镜中开，看着极好取不来，劝你休把镜花想，此命推来主可癫。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1952,
+        "month": 10,
+        "day": 10,
+        "hour": 1,
+        "yearGanZhi": "壬辰",
+        "qian": 40
+      },
+      "reference": {
+        "qian": 40,
+        "weight": "四两零钱",
+        "comment": "生平衣禄是绵长，件件心中自主张。前面风霜多受过，后来必定享安康。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1969,
+        "month": 8,
+        "day": 23,
+        "hour": 6,
+        "yearGanZhi": "己酉",
+        "qian": 38
+      },
+      "reference": {
+        "qian": 38,
+        "weight": "三两八钱",
+        "comment": "凤鸣岐山四方扬，女命逢此大吉昌，走失夫君音信有，晚年衣禄财盈箱。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1926,
+        "month": 6,
+        "day": 8,
+        "hour": 11,
+        "yearGanZhi": "丙寅",
+        "qian": 48
+      },
+      "reference": {
+        "qian": 48,
+        "weight": "四两八钱",
+        "comment": "幼年运道未曾享，若是蹉跎再不兴。兄弟六亲皆无靠，一身事业晚年成。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1943,
+        "month": 4,
+        "day": 21,
+        "hour": 16,
+        "yearGanZhi": "癸未",
+        "qian": 34
+      },
+      "reference": {
+        "qian": 34,
+        "weight": "三两四钱",
+        "comment": "矮巴勾枣难捞枝，看破红尘最相宜，谋望求财空费力，婚姻三娶两次离。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1960,
+        "month": 2,
+        "day": 6,
+        "hour": 21,
+        "yearGanZhi": "庚子",
+        "qian": 35
+      },
+      "reference": {
+        "qian": 35,
+        "weight": "三两五钱",
+        "comment": "平生福量不周全，祖业根基觉少传。营业生涯宜守旧，时来衣食胜从前。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1977,
+        "month": 9,
+        "day": 19,
+        "hour": 2,
+        "yearGanZhi": "丁巳",
+        "qian": 35
+      },
+      "reference": {
+        "qian": 35,
+        "weight": "三两五钱",
+        "comment": "女子走冰怕冰薄，出行交易受残霜，婚姻周郎休此意，官司口舌须相加。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1934,
+        "month": 7,
+        "day": 4,
+        "hour": 7,
+        "yearGanZhi": "甲戌",
+        "qian": 48
+      },
+      "reference": {
+        "qian": 48,
+        "weight": "四两八钱",
+        "comment": "幼年运道未曾享，若是蹉跎再不兴。兄弟六亲皆无靠，一身事业晚年成。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1951,
+        "month": 5,
+        "day": 17,
+        "hour": 12,
+        "yearGanZhi": "辛卯",
+        "qian": 36
+      },
+      "reference": {
+        "qian": 36,
+        "weight": "三两六钱",
+        "comment": "忧悉常锁两眉间，家业挂心不等闲，从今以后防口角，任意行移不相关。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1968,
+        "month": 3,
+        "day": 2,
+        "hour": 17,
+        "yearGanZhi": "戊申",
+        "qian": 51
+      },
+      "reference": {
+        "qian": 51,
+        "weight": "五两一钱",
+        "comment": "一世荣华事事通，不须劳碌自享丰。弟兄叔侄皆如意，家业成时福禄宏。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1925,
+        "month": 10,
+        "day": 15,
+        "hour": 22,
+        "yearGanZhi": "乙丑",
+        "qian": 33
+      },
+      "reference": {
+        "qian": 33,
+        "weight": "三两三钱",
+        "comment": "初限命中有变化，中年可比树落花，勤俭持家难度日，晚年成业享荣华。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1942,
+        "month": 8,
+        "day": 28,
+        "hour": 3,
+        "yearGanZhi": "壬午",
+        "qian": 38
+      },
+      "reference": {
+        "qian": 38,
+        "weight": "三两八钱",
+        "comment": "一生骨肉最清高，早入黄门姓名标。待看看将三十六，蓝袍脱去换红袍。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1959,
+        "month": 6,
+        "day": 13,
+        "hour": 8,
+        "yearGanZhi": "己亥",
+        "qian": 42
+      },
+      "reference": {
+        "qian": 42,
+        "weight": "四两二钱",
+        "comment": "杜井破废已多年，今有泉水出来鲜，资生济竭人称美，中运来转喜安然。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1976,
+        "month": 4,
+        "day": 26,
+        "hour": 13,
+        "yearGanZhi": "丙辰",
+        "qian": 43
+      },
+      "reference": {
+        "qian": 43,
+        "weight": "四两三钱",
+        "comment": "为人心性最聪明，作事轩昂近贵人。衣禄一生天数定，不须劳碌是丰享。"
+      },
+      "gender": "男"
+    },
+    {
+      "input": {
+        "year": 1933,
+        "month": 2,
+        "day": 11,
+        "hour": 18,
+        "yearGanZhi": "癸酉",
+        "qian": 33
+      },
+      "reference": {
+        "qian": 33,
+        "weight": "三两三钱",
+        "comment": "初限命中有变化，中年可比树落花，勤俭持家难度日，晚年成业享荣华。"
+      },
+      "gender": "女"
+    },
+    {
+      "input": {
+        "year": 1950,
+        "month": 9,
+        "day": 24,
+        "hour": 23,
+        "yearGanZhi": "庚寅",
+        "qian": 52
+      },
+      "reference": {
+        "qian": 52,
+        "weight": "五两二钱",
+        "comment": "一世享通事事能，不须劳思自然能。家族欣然心皆好，家业丰享自称心。"
+      },
+      "gender": "男"
+    }
+  ]
+}

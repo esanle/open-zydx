@@ -1,0 +1,18 @@
+{
+  "source": "https://zydx.top/images/lunar.js?v=1",
+  "referenceSha256": "8816841960e2674cd0a73e1ad3b197f18dcece4c72e380ef55b9c810c67cca34",
+  "scope": {
+    "firstYear": 1902,
+    "lastYear": 2038,
+    "monthCount": 1644,
+    "dayCount": 50052,
+    "includesAllDays": true,
+    "referenceDateScope": "full term interval, not legacy DOM 30-slot truncation",
+    "timezone": "Asia/Shanghai (legacy reference requires it)"
+  },
+  "referenceDataSha256": "490f926ddee14f4133a1d54f2d612f5f8dd8a05860bbcca7f20e9c6944ebb711",
+  "differenceCount": 0,
+  "dateOverrides": {},
+  "lunarOverrides": {},
+  "differences": []
+}

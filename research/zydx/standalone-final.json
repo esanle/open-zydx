@@ -1,0 +1,12 @@
+{
+  "births": 284,
+  "boneProbes": 224,
+  "commonJS": true,
+  "browserGlobalWithoutDOM": true,
+  "noPackageManifest": true,
+  "noNodeModules": true,
+  "runtimeFiles": [
+    "index.html",
+    "bazi.js"
+  ]
+}

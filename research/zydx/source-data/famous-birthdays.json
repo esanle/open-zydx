@@ -1,0 +1,17 @@
+{
+  "datePolicy": "采用列明的一手或机构传记记录，不主张这些记录消除了所有生日版本争议；所有测试小时均为假设，未确认真实出生时刻。",
+  "people": [
+    {"name":"沈从文","date":"1902-12-28","gender":"男","source":"https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200609/t20060928_1977903.html"},
+    {"name":"邓小平","date":"1904-08-22","gender":"男","source":"https://www.forestry.gov.cn/c/www/xds/99322.jhtml"},
+    {"name":"巴金","date":"1904-11-25","gender":"男","source":"https://www.cflac.org.cn/zt/2005-10/19/content_15593822.htm"},
+    {"name":"华罗庚","date":"1910-11-12","gender":"男","source":"https://www.amss.cas.cn/ryszl/hlg/rwjs/"},
+    {"name":"钱学森","date":"1911-12-11","gender":"男","source":"https://www.cas.cn/zt/rwzt/qxsssyzn/qxsjj/"},
+    {"name":"钱三强","date":"1913-10-16","gender":"男","source":"https://www.sastind.gov.cn/n10086205/n10086389/c10374400/content.html"},
+    {"name":"邓稼先","date":"1924-06-25","gender":"男","source":"https://www.tsinghua.edu.cn/info/1802/72945.htm"},
+    {"name":"李政道","date":"1926-11-24","gender":"男","source":"https://www.nobelprize.org/prizes/physics/1957/lee/facts/"},
+    {"name":"袁隆平","date":"1930-09-07","gender":"男","source":"https://sdaj.hunan.gov.cn/wszt/xxsl/xxrw/200609/t20060928_1977925.html","dateNote":"采用该机构传记的记载；存在其他公开生日版本，此处用于固定输入的算法对照。"},
+    {"name":"屠呦呦","date":"1930-12-30","gender":"女","source":"https://www.nobelprize.org/prizes/medicine/2015/tu/biographical/"},
+    {"name":"丁肇中","date":"1936-01-27","gender":"男","source":"https://www.nobelprize.org/prizes/physics/1976/ting/facts/","dateNote":"在美出生；此处直接输入公开日期和测试小时，不声称已完成出生地时区或真太阳时的真实命盘换算。"},
+    {"name":"高行健","date":"1940-01-04","gender":"男","source":"https://www.nobelprize.org/prizes/literature/2000/gao/facts/"}
+  ]
+}
