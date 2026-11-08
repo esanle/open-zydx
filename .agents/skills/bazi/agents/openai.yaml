@@ -1,0 +1,4 @@
+interface:
+  display_name: "八字排盘"
+  short_description: "用出生资料离线排四柱，查询大运流年流月流日与十二长生"
+  default_prompt: "用 $bazi 按我提供的出生资料排盘，并说明采用的历法和换日口径。"

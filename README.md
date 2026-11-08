@@ -19,6 +19,21 @@ bazi.js      独立算法库 + 可选原生交互界面 + 内置历法和兼容�
 
 ![十二长生手机界面](research/zydx/screenshots/life-cycle-320.png)
 
+## 在 Codex 中使用八字技能
+
+在此仓库开启 Codex 对话，输入 `$bazi` 即可按出生资料排盘、查大运流年流月流日，或单独查询十二长生。技能使用同一份 `bazi.js` 在本机计算，需要 Node.js，无需安装 npm 依赖。出生资料由命令在本机处理。
+
+如需在其他项目中使用，从仓库根目录执行以下命令，将技能和计算库一起复制到个人技能目录。更新时可重新执行。
+
+```sh
+bazi_skill_root="${CODEX_HOME:-$HOME/.codex}/skills"
+mkdir -p "$bazi_skill_root/bazi"
+cp -R .agents/skills/bazi/. "$bazi_skill_root/bazi/"
+cp bazi.js THIRD-PARTY-LICENSES.txt "$bazi_skill_root/bazi/"
+```
+
+示例提示词：`$bazi 帮我排公历 1990 年 6 月 15 日 12:30 的八字，按男命排运，列出四柱和首步大运。` 输入字段和命令示例见 [八字技能说明](.agents/skills/bazi/SKILL.md)。
+
 ## 十二长生的图示依据
 
 采用《子平真诠》正文的十干“阳顺阴逆”及土随火口径，结合《三命通会》解释十二阶段的循环。不同原典、后世评注存在论法差异，当前采用的体系在界面中明确标注。
