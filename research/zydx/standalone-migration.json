@@ -1,9 +1,0 @@
-{
-  "birthInputs": 284,
-  "modesPerInput": 2,
-  "months": 1644,
-  "days": 50052,
-  "commonJS": true,
-  "browserGlobalWithoutDOM": true,
-  "externalRuntimeDependencies": 0
-}

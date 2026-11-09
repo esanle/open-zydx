@@ -1,8 +1,0 @@
-{
-  "passed": true,
-  "birthInputs": 284,
-  "modesPerInput": 2,
-  "months": 1644,
-  "days": 50052,
-  "notes": "Responsive UI and Chinese teaching comments do not change calculation results."
-}
