@@ -1,14 +1,6 @@
-// Reuse the installed engine or the canonical copy at the repository root.
-const { existsSync } = require('node:fs');
-const { resolve } = require('node:path');
+const Bazi = require('../bazi.js');
 
 function run(action, input) {
-  const installedEngine = resolve(__dirname, '../bazi.js');
-  const engine = existsSync(installedEngine)
-    ? installedEngine
-    : resolve(__dirname, '../../../../bazi.js');
-  const Bazi = require(engine);
-
   switch (action) {
     case 'chart':
       if (!Number.isInteger(input.hour)) throw new Error('排盘需要明确的出生小时');
